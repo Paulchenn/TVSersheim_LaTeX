@@ -1,0 +1,58 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Required file for LaTeX template for protocoles of TV Sersheim 1904 e. V.
+%
+% Author:		   Paul Glaser
+% Date:				Februar 2025
+%
+% Required files:	- Helperfiles/Hintergrund_ohneDaten.pdf
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% Packages %%%%%
+\usepackage[a4paper, left=1.1cm, right=2.5cm, top=5cm, bottom=2.5cm]{geometry}	% To adjust page geometry
+
+\usepackage[scaled]{helvet}     						% To set Fontstyle (Helvetica)
+\renewcommand{\familydefault}{\sfdefault}		% To set sans serif font as default
+
+\usepackage{tabularx}	% For flexible table widths
+\usepackage{multirow} 	% For cells over multiple lines
+\usepackage{booktabs} 	% For nicer tables
+\usepackage{makecell} 		% For better cell formatting
+\usepackage{longtable}		% For long tables
+
+\usepackage{colortbl}			% For background colors
+\usepackage{xcolor}				% Defines Colors
+\usepackage{transparent}	% to adjust the opacity
+\usepackage{background}		% To set background
+
+\usepackage{eso-pic}	% Placing an image in the background
+\usepackage{graphicx}	% To include picture
+
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue,]{hyperref}	% To adjust style of links
+
+\usepackage{amsmath}	% For Mathematics (e. g. equations)
+
+\usepackage{enumitem}  % For custom enumerations
+\usepackage{fancyhdr}	% To set header
+\usepackage{lastpage} 	% For the total number of pages
+\usepackage{lipsum}	% To generate dummy text
+
+
+%%%%% Settings %%%%%
+\setlength{\parindent}{0pt}	% Sets the indentation of the first line to 0pt
+
+\pagestyle{fancy}	% Do nice headers
+\fancyhf{} % reset header
+\fancyfoot[C]{Seite \thepage{} von \pageref{LastPage}}	% Bottom center: Current page of total number of pages
+\renewcommand{\headrulewidth}{0pt} % Remove dash in header
+
+% Adjusting Lists
+\setlist[itemize]{nosep, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt}
+\setlength{\parskip}{0pt}
+
+% Set Background
+\backgroundsetup{scale = 1, angle = 0, opacity = 1,
+	contents = {\includegraphics[width = \paperwidth,
+		height = \paperheight, keepaspectratio]
+		{Helperfiles/Hintergrund_ohneDaten.pdf}}}

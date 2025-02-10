@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% LaTeX template for protocoles of TV Sersheim 1904 e. V.
+%
+% Author:		   Paul Glaser
+% Date:				Februar 2025
+%
+% Required files:	- Helperfiles/TVS_Protokoll_Settings.tex
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[11pt,a4paper]{article}
+
+%%%%% Settings (Packages, Styles, etc.) %%%%%
+\input{Helperfiles/TVS_Protokoll_Settings.tex}
+
+%%%%% Begin Document %%%%%
+\begin{document}
+	
+	%%%%% Informationtable %%%%%
+	
+	\begin{longtable}{|>{\columncolor[gray]{0.9}}p{3cm}|p{\dimexpr\textwidth-2.57cm}|}
+		\hline
+		\rowcolor[gray]{0.9} % Grauer Hintergrund (Helligkeit von 0.9)
+		\multicolumn{2}{|c|}{\large\textbf{Protokoll Besprechung}} \\
+		\hline
+		Uhrzeit: & 22.01.2025, 20:00-22:00\\
+		\hline
+		Sitzungsleiter: & Frau Mustermann\\
+		\hline
+		Protokollführer: & Herr Mustermann\\
+		\hline
+		Teilnehmer: & Frau Mustermann (O); Herr Mustermann (A)\\
+		& A: Anwesend; O: Online; E: Entschuldigt; U: Unentschuldigt\\
+		\hline
+		Zusatzverteiler: & Ausschuss\\
+		\hline
+		Anhang: & -\\
+		\hline
+	\end{longtable}
+	
+%	\vspace{1cm}
+	
+	%%%%% Main Table --> Protocol %%%%%
+	\begin{longtable}{|p{3.4cm}|p{\dimexpr\textwidth-6.8cm}|p{3.4cm}|}
+		\hline
+		\rowcolor[gray]{0.9} % Grauer Hintergrund (Helligkeit von 0.9)
+		\textbf{\large Thema \& Referent} & \textbf{\large Ergebnisse / Informationen / \textcolor{orange}{Aufgaben} / \textcolor{blue}{Beschlüsse}} & \textbf{\large Ergebnis / }\\
+		\rowcolor[gray]{0.9}
+		& & \textbf{\large Verantwortlichkeit} \\
+		\hline
+		
+		% Row 1
+		\begin{itemize}[label={},leftmargin=*]
+			\item Top 1
+			\item Frau
+		\end{itemize} & \begin{itemize}
+			\item Bla
+			\item Bla
+			\item Bla
+		\end{itemize} & \\
+		
+		& \begin{itemize}[label=\textcolor{orange}{$\rightarrow$}]
+			\item \textcolor{orange}{Aufgabe 1}
+			\item \textcolor{orange}{Aufgabe 2}
+		\end{itemize} & \begin{itemize}[label={},leftmargin=*]
+			\item \textcolor{orange}{Frau}
+			\item \textcolor{orange}{Herr}
+		\end{itemize} \\
+		
+		& \begin{itemize}[label=\textcolor{blue}{$\rightarrow$}]
+			\item \textcolor{blue}{Beschluss 1 $\rightarrow$ Angenommen.}
+			\item \textcolor{blue}{Beschluss 2 $\rightarrow$ Abgelehnt.}
+		\end{itemize} & \begin{itemize}[label={},leftmargin=*]
+			\item \textcolor{blue}{Einstimmig}
+			\item \textcolor{blue}{0/2}
+		\end{itemize} \\
+		\hline
+		
+		% Row 2
+		\begin{itemize}[label={},leftmargin=*]
+			\item Top 2
+			\item Herr
+		\end{itemize} & \begin{itemize}
+			\item Bla
+			\item Bla
+			\item Bla
+		\end{itemize} & \\
+		
+		& \begin{itemize}[label=\textcolor{orange}{$\rightarrow$}]
+			\item \textcolor{orange}{Aufgabe 1}
+			\item \textcolor{orange}{Aufgabe 2}
+		\end{itemize} & \begin{itemize}[label={},leftmargin=*]
+			\item \textcolor{orange}{Frau}
+			\item \textcolor{orange}{Herr}
+		\end{itemize} \\
+		
+		& \begin{itemize}[label=\textcolor{blue}{$\rightarrow$}]
+			\item \textcolor{blue}{Beschluss 1 $\rightarrow$ Angenommen.}
+			\item \textcolor{blue}{Beschluss 2 $\rightarrow$ Abgelehnt.}
+		\end{itemize} & \begin{itemize}[label={},leftmargin=*]
+			\item \textcolor{blue}{Einstimmig}
+			\item \textcolor{blue}{0/2}
+		\end{itemize} \\
+		\hline
+\end{longtable}
+
+\newpage
+
+%%%%% next session %%%%%
+nächste Sitzung: 20.09.2025, 10:00\,Uhr, Vereinszimmer
+	
+	\vspace{2.5cm}
+	
+	%%%%% Signings %%%%%
+	\begin{tabular}{p{10cm}}
+		\\
+		\hline
+		Datum, Unterschrift Protokollführer
+	\end{tabular}
+	
+	\vspace{1.5cm}
+	
+	\begin{tabular}{p{10cm}}
+		\\
+	\hline
+	Datum, Unterschrift Sitzungsleiter
+	\end{tabular}
+\end{document}
